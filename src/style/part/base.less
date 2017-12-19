@@ -1,0 +1,111 @@
+//переменные
+@font: "Tahoma" ,Helvetica,tahoma,verdana, sans-serif;
+@font-alt: 'Times New Roman', sans-serif;
+
+@color_white: #fff;
+@color_text: #000;
+@color_link: #00519e;
+@color_blue: #00519e;
+@color_red: #da241d;
+@color_grey: #efefec;
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    height: 100%; 
+    width: 100%; 
+}
+
+body {
+    //width: 100%; 
+    position: relative;
+    font-family: @font;
+    margin: 0;
+    padding: 0;
+    background: @color_white;
+    color: @color_text;
+    font-size: 14px;
+}
+
+img {
+    border: none;
+}
+
+p {
+    font-size: 16px;
+    margin: 0 0 20px 0;
+    line-height: 30px;
+    text-align: center;
+}
+
+a {
+    color: #000;
+    outline: none;
+    text-decoration: underline;
+    &:hover {
+        color: #000;
+        text-decoration: none;
+    }
+}
+
+button {
+    transition: all 0.2s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.head (@font-size, @margin-bottom, @line-height: normal, @color) {
+    font-size: @font-size;
+    margin: 0 0 @margin-bottom 0;
+    line-height: @line-height;
+    color: @color;
+}
+
+h1 {
+    .head(26px, 30px, normal, @color_text);
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    .head(18px, 25px, normal, @color_text);
+    font-weight: 400;
+}
+
+h3 {
+    .head(16px, 20px, normal, @color_text);
+}
+
+h4 {
+    .head(14px, 15px, normal, @color_text);
+    font-weight: 700;
+}
+
+h5 {
+    .head(12px, 15px, normal, @color_text);
+    font-weight: 700;
+}
+
+
+table{
+    border-collapse:collapse;
+}
+
+td{
+
+}
+
+ul, ol{
+    margin:0 0 25px 0px; 
+    padding: 0 0 0 30px;
+}
+ul li, ol li{
+    font-size: 14px;
+    margin-bottom:5px;
+}

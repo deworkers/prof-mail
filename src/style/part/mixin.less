@@ -1,0 +1,26 @@
+/*полезные миксины*/
+
+
+//цвет плейслолдера input
+.placeholder-color(@ph-color) {
+    &::-webkit-input-placeholder {color: @ph-color}
+    &::-moz-placeholder          {color: @ph-color}
+    &:-moz-placeholder           {color: @ph-color}
+    &:-ms-input-placeholder      {color: @ph-color}
+}
+
+.gradient-v(@color1, @color2) {
+    background: @color1;
+    background: -moz-linear-gradient(top, @color1 0%, @color2 100%);
+    background: -webkit-linear-gradient(top, @color1 0%, @color2 100%);
+    background: linear-gradient(to bottom, @color1 0%, @color2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color1', endColorstr='@color2',GradientType=0 );
+}
+
+.gradient-h(@color1, @color2) {
+    background: @color1;
+    background: -moz-linear-gradient(top, @color1 0%, @color2 100%);
+    background: -webkit-linear-gradient(top, @color1 0%, @color2 100%);
+    background: linear-gradient(to bottom, @color1 0%, @color2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color1', endColorstr='@color2',GradientType=0 );
+}
