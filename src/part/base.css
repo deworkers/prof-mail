@@ -15,6 +15,9 @@ body {
   color: #000;
   font-size: 14px;
 }
+table {
+  font-family: "Tahoma", Helvetica, tahoma, verdana, sans-serif;
+}
 img {
   border: none;
 }
